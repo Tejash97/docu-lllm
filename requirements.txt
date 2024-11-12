@@ -7,5 +7,6 @@ langchain
 streamlit
 langchain_community
 python-dotenv
+sentence-transformers
 pypdf
 google-cloud-aiplatform>=1.38
