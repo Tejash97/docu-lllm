@@ -57,7 +57,7 @@ def vector_embedding(uploaded_file):
             
             # Split the documents into chunks
             st.session_state.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-            st.session_state.final_documents = st.session_state.text_splitter.split_documents(st.session_state.docs[:20])
+            st.session_state.final_documents = st.session_state.text_splitter.split_documents(st.session_state.docs)
             
             if not st.session_state.final_documents:
                 st.write("No documents were split. Please check document loading and splitting logic.")
